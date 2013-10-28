@@ -2,32 +2,41 @@ var Classure = (function() {
 
   // ********** <COMMONS> **************************************************************************
   // ... put here private methods and variables COMMONS to all instances
-  var privateCommon;
+  var privateCommon = 'example private common';
   // ********** </COMMONS> *************************************************************************
 
   // ********** <PRIVATED>**************************************************************************
   // ... put here private && publics methods and variables UNIQUES to each instance
   var api = function() {
 
-    var privateUnique = 1,
-     mock;
+    var privateUnique;
 
-    var init = function(num){
-      mock = num;
+    function init() {
+      privateUnique = 1;
     };
 
-    var update = function(){
+    function update() {
       privateUnique++;
     };
 
-    var show = function(){
-      console.log("show :: privateUnique -> " + mock + " : " + privateUnique);
+    function show() {
+      console.log("show :: privateUnique ->  : " + privateUnique);
     };
+
+    function getPrivateUnique() {
+      return privateUnique;
+    }
+
+    function getPrivateCommon() {
+      return privateCommon;
+    }
 
     return {
       init: init,
       update : update,
-      show: show
+      show: show,
+      getPrivateUnique : getPrivateUnique,
+      getPrivateCommon : getPrivateCommon
     };
 
   };
