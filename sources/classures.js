@@ -1,27 +1,41 @@
 var Classure = (function() {
 
-  // ********** <COMMONS> **************************************************************************
+  // ********** <COMMONS TO ALL INSTANCES> *********************************************************
   // ... put here private methods and variables COMMONS to all instances
+  // --- <privated>
   var privateCommon = 'example private common';
-  // ********** </COMMONS> *************************************************************************
 
-  // ********** <PRIVATED>**************************************************************************
+  function privateCommonFunction(){
+    privateCommon = 'set privateCommon';
+  }
+  // --- </privated>
+  // ********** </COMMONS TO ALL INSTANCES> ********************************************************
+
+  // ********** <UNIQUE FOR INSTANCE>***************************************************************
   // ... put here private && publics methods and variables UNIQUES to each instance
   var api = function() {
 
+    // --- <privated>
     var privateUnique;
 
+    function privateUniqueFunction(){
+      privateUnique = 'set privatedUnique';
+      privateCommon = 'set privateCommon with for each instance';
+    }
+    // --- </privated>
+
+    // --- <public>
     function init() {
       privateUnique = 1;
-    };
+    }
 
     function update() {
       privateUnique++;
-    };
+    }
 
     function show() {
       console.log("show :: privateUnique ->  : " + privateUnique);
-    };
+    }
 
     function getPrivateUnique() {
       return privateUnique;
@@ -30,6 +44,7 @@ var Classure = (function() {
     function getPrivateCommon() {
       return privateCommon;
     }
+    // --- </public>
 
     return {
       init: init,
@@ -42,6 +57,6 @@ var Classure = (function() {
   };
 
   return api;
-  // ********** </PRIVATED>*************************************************************************
+  // ********** </UNIQUE FOR INSTANCE>**************************************************************
 
 }());

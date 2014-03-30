@@ -10,6 +10,8 @@ Class javascript with closures patterns.
 ##Examples
 ---
 
+### Example JSBIN
+
 [jsbin example](http://jsbin.com/iZinIqO/20/edit?html,js,output)
 
 ### Example create class with method unique and public to each instance
