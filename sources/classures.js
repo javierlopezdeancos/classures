@@ -1,5 +1,7 @@
 var Classure = (function() {
 
+  'use strict';
+
   // ********** <COMMONS TO ALL INSTANCES> *********************************************************
   // ... put here private methods and variables COMMONS to all instances
   // --- <privated>
@@ -19,7 +21,7 @@ var Classure = (function() {
     var privateUnique;
 
     function privateUniqueFunction(){
-      privateUnique = 'set privatedUnique';
+      privateUnique = 'set privateUnique';
       privateCommon = 'set privateCommon with for each instance';
     }
     // --- </privated>
@@ -59,4 +61,4 @@ var Classure = (function() {
   return api;
   // ********** </UNIQUE FOR INSTANCE>**************************************************************
 
-}());
+})();
