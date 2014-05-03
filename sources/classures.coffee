@@ -10,7 +10,7 @@ Classure = ( ->
 	## ********** <UNIQUE FOR INSTANCE>***************************************************************
 	## ... put here private && publics methods and variables UNIQUES to each instance
  	api = ->
-		## --- <privated>
+ 		## --- <privated>
   	privateUnique
   	privateUniqueFunction ->
    		privateUnique = 'set privateUnique'
