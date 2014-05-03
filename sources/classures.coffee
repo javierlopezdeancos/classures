@@ -1,19 +1,16 @@
 Classure = ( ->
-
 	## ********** <COMMONS TO ALL INSTANCES> *********************************************************
-  ## ... put here private methods and variables COMMONS to all instances
-  ## --- <privated>
+	## ... put here private methods and variables COMMONS to all instances
+	## --- <privated>
 	privateCommon = 'example privated common'
 	privateCommonFunction  = ->
   	privateCommon = 'set privateCommon'
-  ## --- </privated>
-  ## ********** </COMMONS TO ALL INSTANCES> ********************************************************
-
-  ## ********** <UNIQUE FOR INSTANCE>***************************************************************
-  ## ... put here private && publics methods and variables UNIQUES to each instance
+	## --- </privated>
+	## ********** </COMMONS TO ALL INSTANCES> ********************************************************
+	## ********** <UNIQUE FOR INSTANCE>***************************************************************
+	## ... put here private && publics methods and variables UNIQUES to each instance
  	api = ->
-
- 		## --- <privated>
+		## --- <privated>
   	privateUnique
   	privateUniqueFunction ->
    		privateUnique = 'set privateUnique'
