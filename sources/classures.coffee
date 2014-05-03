@@ -7,6 +7,7 @@ Classure = ( ->
   	privateCommon = 'set privateCommon'
 	## --- </privated>
 	## ********** </COMMONS TO ALL INSTANCES> ********************************************************
+	
 	## ********** <UNIQUE FOR INSTANCE>***************************************************************
 	## ... put here private && publics methods and variables UNIQUES to each instance
  	api = ->
