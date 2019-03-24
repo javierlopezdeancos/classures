@@ -1,11 +1,11 @@
-#classures {
+# classures {
 
-##Description
+## Description
 ---
 
 Class javascript with closures patterns.
 
-    class = new Class();
+    classhttps://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch = new Class();
     
 ##Examples
 ---
@@ -35,4 +35,4 @@ Class javascript with closures patterns.
 	var privateCommon = class.getPrivateCommon(); 
 
 
-#};
+# };
