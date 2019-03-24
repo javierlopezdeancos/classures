@@ -5,7 +5,7 @@
 
 Class javascript with closures patterns.
 
-    classhttps://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch = new Class();
+    class = new Class();
     
 ## Examples
 ---
