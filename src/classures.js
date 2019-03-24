@@ -1,14 +1,13 @@
 var Classure = (function() {
-
-  'use strict';
+  "use strict";
 
   // ********** <COMMONS TO ALL INSTANCES> *********************************************************
   // ... put here private methods and variables COMMONS to all instances
   // --- <privated>
-  var privateCommon = 'example private common';
+  var privateCommon = "example private common";
 
-  function privateCommonFunction(){
-    privateCommon = 'set privateCommon';
+  function privateCommonFunction() {
+    privateCommon = "set privateCommon";
   }
   // --- </privated>
   // ********** </COMMONS TO ALL INSTANCES> ********************************************************
@@ -16,13 +15,12 @@ var Classure = (function() {
   // ********** <UNIQUE FOR INSTANCE>***************************************************************
   // ... put here private && publics methods and variables UNIQUES to each instance
   var api = function() {
-
     // --- <privated>
     var privateUnique;
 
-    function privateUniqueFunction(){
-      privateUnique = 'set privateUnique';
-      privateCommon = 'set privateCommon with for each instance';
+    function privateUniqueFunction() {
+      privateUnique = "set privateUnique";
+      privateCommon = "set privateCommon with for each instance";
     }
     // --- </privated>
 
@@ -50,15 +48,13 @@ var Classure = (function() {
 
     return {
       init: init,
-      update : update,
+      update: update,
       show: show,
-      getPrivateUnique : getPrivateUnique,
-      getPrivateCommon : getPrivateCommon
+      getPrivateUnique: getPrivateUnique,
+      getPrivateCommon: getPrivateCommon
     };
-
   };
 
   return api;
   // ********** </UNIQUE FOR INSTANCE>**************************************************************
-
 })();
